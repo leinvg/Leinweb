@@ -1,10 +1,32 @@
 ---
+import ProjectCard from "../components/ProjectCard.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div>
-    <h1 class="font-bold">Leonardo Alain</h1>
-    <h2>Desarrollador Web</h2>
-  </div>
+  <section class="flex flex-col gap-3">
+    <svg
+      class="w-5 fill-foreground-primary"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M24 19.1186C24 21.8145 21.8145 24 19.1186 24C16.4227 24 14.2373 21.8145 14.2373 19.1186C14.2373 16.4227 16.4227 14.2373 19.1186 14.2373C21.8145 14.2373 24 16.4227 24 19.1186Z"
+      ></path>
+      <path
+        d="M14.0861 0.60209C16.4666 1.93453 17.3712 5.04792 16.1065 7.55603L9.19206 21.2691C7.92741 23.7773 4.97242 24.7303 2.59191 23.3979C0.211397 22.0655 -0.69319 18.9521 0.571458 16.444L7.48591 2.73085C8.75056 0.222729 11.7055 -0.730348 14.0861 0.60209Z"
+      ></path>
+    </svg>
+    <h1 class="text-xl/[1.4] text-foreground-primary font-lexend font-bold">
+      Leonardo<br />Alain
+    </h1>
+    <h2 class="text-xl/[1.4] text-foreground-primary font-lexend  font-normal">
+      Desarrollador Web
+    </h2>
+  </section>
+  <section class="flex flex-col gap-6">
+    <ProjectCard projectTag="Rediseño" projectName="Sitio web Athajos" />
+    <ProjectCard />
+    <ProjectCard />
+  </section>
 </Layout>
