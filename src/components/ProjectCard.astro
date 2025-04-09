@@ -20,7 +20,7 @@ const { tag = pending, name = "Nombre del proyecto", link = "/" } = Astro.props;
     class="absolute bottom-0 w-full p-3 flex opacity-0 transition-opacity duration-300 group-hover:opacity-100"
   >
     <a
-      href={link}
+      href={tag != pending ? link : undefined}
       class={`bg-neutral-200 w-full py-4 rounded-xl text-center text-sm/[1] font-semibold transition-all duration-150 ${tag != pending ? "cursor-pointer text-foreground-secondary hover:bg-neutral-300" : "cursor-default text-foreground-disabled"}`}
       >Visualizar</a
     >
